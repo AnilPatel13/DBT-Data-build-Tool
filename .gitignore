@@ -1,6 +1,6 @@
-package-lock.yml
-target/
-dbt_packages/
+dbtsnowflake/package-lock.yml
+dbtsnowflake/target/
+dbtsnowflake/dbt_packages/
 
 archive
 dbt_dagster_project/tmp*
