@@ -1,0 +1,13 @@
+package-lock.yml
+target/
+dbt_packages/
+
+archive
+dbt_dagster_project/tmp*
+
+logs/
+venv/
+
+**/__pycache__/
+*.pyc
+tmp*/
