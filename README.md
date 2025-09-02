@@ -29,15 +29,34 @@ cd "Snowflake-Data-Import"
 ### 3. DBT Project
 ```bash
 # Activate virtual environment
-source venv/bin/activate
+```
+## Python Environment & DBT Setup (Windows)
 
-# Navigate to DBT project
-cd dbtsnowflake
+### 1. Create and Activate Virtual Environment
+```powershell
+pip install virtualenv
+virtualenv venv
+.\venv\Scripts\activate
+```
 
-# Test connection
+### 2. Install Dependencies
+```powershell
+pip install -r requirements.txt
+```
+
+### 3. Initialize dbt Project
+```powershell
+dbt init dbtsnowflake
+```
+Follow the prompts to configure your Snowflake connection (account, user, password, role, warehouse, database, schema, threads).
+
+### 4. Validate dbt Setup
+```powershell
 dbt debug
+```
 
-# Run models
+### 5. Run Models
+```powershell
 dbt run
 ```
 
